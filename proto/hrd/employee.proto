@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package hrd;
+
+option go_package = "hrd";
+
+service HumanResource {
+    rpc CreateEmployee(Employee) returns (EmployeeResponse){}
+    rpc GetSalary(Employee) returns (Salary){}
+}
+
+message Salary {
+    double amount = 1;
+    string currency = 2;
+}
+
+message Employee {
+    string firstname = 1;
+    string lastname = 2;
+    int32 education_level = 3;
+}
+
+message EmployeeResponse {
+    int64 id = 1;
+
+    Employee employee = 2;
+    Department department = 3;
+}
+
+message Department {
+    string name = 1;
+}
