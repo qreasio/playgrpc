@@ -1,4 +1,4 @@
-#PlaygRPC
+# PlaygRPC
 
 This repo is used for personal learning and playing around with gRPC using Go.
 There are two parts, gRPC client and gRPC server.
