@@ -7,7 +7,6 @@ import (
 	"net"
 )
 
-
 const (
 	address = "localhost:4040"
 )
@@ -20,5 +19,8 @@ func main() {
 	grpcServer := grpc.NewServer()
 	server := &hrd.Server{}
 	hrd.RegisterHumanResourceServer(grpcServer, server)
-	grpcServer.Serve(lis)
+	err = grpcServer.Serve(lis)
+	if err != nil {
+		log.Fatalf("failed to start grpc server: %v", err)
+	}
 }

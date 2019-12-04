@@ -21,7 +21,7 @@ go run client/main.go
 Output:
 ```sh
 2019/11/29 16:21:51 Employee ID: 1
-2019/11/29 16:21:51 Employee Name: Isak Rickyanto
+2019/11/29 16:21:51 Employee Name: Bruce Banner
 2019/11/29 16:21:51 Employee Department Name: Backend Engineering
-2019/11/29 16:21:51 Employee Salary: 120000.00 USD
+2019/11/29 16:21:51 Employee Salary: 1200.00 USD
 ```

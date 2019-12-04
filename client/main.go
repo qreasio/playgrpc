@@ -25,7 +25,7 @@ func main() {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 
-	employee := &hrd.Employee{Firstname: "Isak", Lastname: "Rickyanto", EducationLevel: 2}
+	employee := &hrd.Employee{Firstname: "Bruce", Lastname: "Banner", EducationLevel: 2}
 	r, err := c.CreateEmployee(ctx, employee)
 	if err != nil {
 		log.Fatalf("could not create employee: %v", err)

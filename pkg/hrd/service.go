@@ -15,7 +15,7 @@ func (s *Server) CreateEmployee(ctx context.Context, employee *Employee) (*Emplo
 }
 
 func (s *Server) GetSalary(ctx context.Context, e *Employee) (*Salary, error) {
-	baseSalaryAmount := 100000.0
+	baseSalaryAmount := 1000.0
 	salaryAmount := baseSalaryAmount
 
 	if e.EducationLevel == 2 {
